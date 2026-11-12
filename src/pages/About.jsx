@@ -16,7 +16,7 @@ const About = () => {
       />
       <InfoCard
         title="The Project"
-        text="This site explains what a crypto trading terminal is and shows the top companies. It is a student project for the course Web Programming Advanced (CSCI426). It uses React, React Router, and Bootstrap."
+        text="This site explains what a crypto trading terminal is and shows the top companies. It is a student project for the course Web Programming Advanced (CSCI426). It uses React, React Router, and Tailwind CSS."
       />
       <SectionTitle title="What We Used" />
       <InfoList items={topics} />

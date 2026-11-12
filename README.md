@@ -70,7 +70,17 @@ Phone width (375 px):
 - A controlled form with required fields.
 - Lists with `map` and `filter`.
 - The ternary operator (empty table row, company not found).
-- Bootstrap grid, so the pages work on a phone.
+- Tailwind CSS responsive grids (`grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`), so the pages work on a phone.
+
+## Design
+
+The site uses Tailwind CSS 4, set up the same way as the course lab: the `@tailwindcss/vite` plugin in `vite.config.js` and `@import "tailwindcss";` in `src/index.css`.
+
+- Dark slate for the navbar, the page banners, and the table headers, so the site looks like a trading screen.
+- Emerald green (the "price up" color) for buttons and links. Amber for tips.
+- Cards lift a little when you move the mouse over them. The dot next to the site name pulses like a live market light.
+- Grids show 1 column on a phone, 2 on a tablet, and 3 or 4 on a desktop.
+- The form has labels linked to the inputs and placeholder examples.
 
 ## Structure
 
@@ -87,4 +97,4 @@ src/
 
 I used Claude Code (an AI coding assistant) to help write and test this project. Every commit in this repository has a `Co-Authored-By: Claude` line.
 
-Built with Vite, React, React Router, and Bootstrap.
+Built with Vite, React, React Router, and Tailwind CSS.

@@ -25,8 +25,12 @@ const CompanyDetail = () => {
           subtitle="This company is not in our list."
         />
       )}
-      <div className="text-center mb-4">
-        <NavItem to="/Companies" label="Back to Companies" />
+      <div className="mt-8 text-center">
+        <NavItem
+          style="inline-block rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-700"
+          to="/Companies"
+          label="Back to Companies"
+        />
       </div>
     </div>
   );

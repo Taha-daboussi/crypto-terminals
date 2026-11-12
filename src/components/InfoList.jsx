@@ -2,13 +2,9 @@ import InfoCard from "./InfoCard";
 
 const InfoList = ({ items }) => {
   return (
-    <div className="row">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
       {items.map((item, index) => {
-        return (
-          <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
-            <InfoCard title={item.title} text={item.text} />
-          </div>
-        );
+        return <InfoCard key={index} title={item.title} text={item.text} />;
       })}
     </div>
   );
