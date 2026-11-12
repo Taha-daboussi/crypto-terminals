@@ -19,6 +19,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (
+      formData.name.trim() === "" ||
+      formData.terminal.trim() === "" ||
+      formData.reason.trim() === ""
+    )
+      return;
     setSuggestions([...suggestions, formData]);
     setFormData({ name: "", terminal: "", reason: "" });
   };

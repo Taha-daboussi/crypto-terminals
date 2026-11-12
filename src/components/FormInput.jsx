@@ -8,6 +8,7 @@ const FormInput = ({ label, name, value, onchange }) => {
         name={name}
         value={value}
         onChange={onchange}
+        required
       />
     </div>
   );
