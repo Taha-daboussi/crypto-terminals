@@ -1,3 +1,5 @@
+import NavItem from "./NavItem";
+
 const CompareTable = ({ companies }) => {
   return (
     <div className="table-responsive">
@@ -14,7 +16,9 @@ const CompareTable = ({ companies }) => {
           {companies.map((item, index) => {
             return (
               <tr key={index}>
-                <td>{item.name}</td>
+                <td>
+                  <NavItem to={`/Companies/${item.id}`} label={item.name} />
+                </td>
                 <td>{item.type}</td>
                 <td>{item.bestFor}</td>
                 <td>{item.website}</td>

@@ -7,7 +7,7 @@ let topics = [
   {
     id: 2,
     title: "React Router",
-    text: "The navbar uses Link and the pages change with Routes and Route.",
+    text: "The navbar uses Link and the pages change with Routes and Route. The company page reads its id from the URL with useParams.",
   },
   {
     id: 3,

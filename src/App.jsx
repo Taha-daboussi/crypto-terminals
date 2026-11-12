@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Features from "./pages/Features";
 import Companies from "./pages/Companies";
+import CompanyDetail from "./pages/CompanyDetail";
 import Compare from "./pages/Compare";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Features" element={<Features />} />
           <Route path="/Companies" element={<Companies />} />
+          <Route path="/Companies/:id" element={<CompanyDetail />} />
           <Route path="/Compare" element={<Compare />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
