@@ -13,7 +13,7 @@ import About from "./pages/About";
 function App() {
   return (
     <div className="container">
-      <Router basename={import.meta.env.BASE_URL}>
+      <Router basename="/crypto-terminals/">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

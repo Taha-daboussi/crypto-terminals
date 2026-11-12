@@ -6,7 +6,7 @@ import companies from "../data/companies";
 
 const CompanyDetail = () => {
   const { id } = useParams();
-  const company = companies.find((item) => item.id === Number(id));
+  const company = companies.filter((item) => item.id === Number(id))[0];
 
   return (
     <div>

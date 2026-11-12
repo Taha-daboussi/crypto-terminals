@@ -31,7 +31,7 @@ npm run preview   # serve the production build
 Every push to `main` runs `.github/workflows/deploy.yml`. The workflow lints, builds, copies `index.html` to `404.html`, and deploys `dist/` to GitHub Pages.
 
 - `vite.config.js` sets `base: "/crypto-terminals/"`.
-- `App.jsx` gives the router the same base with `basename={import.meta.env.BASE_URL}`.
+- `App.jsx` gives the router the same base with `basename="/crypto-terminals/"`.
 - `404.html` lets GitHub Pages open deep links such as `/crypto-terminals/Companies/7`.
 
 ## Pages
@@ -68,7 +68,7 @@ Phone width (375 px):
 - React Router: `Routes`, `Route`, `Link`, and `useParams`.
 - `useState` and events (Like click, form submit, delete click).
 - A controlled form with required fields.
-- Lists with `map`, `filter`, and `find`.
+- Lists with `map` and `filter`.
 - The ternary operator (empty table row, company not found).
 - Bootstrap grid, so the pages work on a phone.
 
