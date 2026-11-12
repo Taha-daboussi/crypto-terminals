@@ -6,6 +6,7 @@ const Navbar = () => {
       <h4 className="mb-0">Crypto Terminals</h4>
       <div className="d-flex flex-wrap gap-2">
         <NavItem to="/" label="Home" />
+        <NavItem to="/Features" label="Features" />
         <NavItem to="/Companies" label="Companies" />
         <NavItem to="/Compare" label="Compare" />
         <NavItem to="/Contact" label="Contact" />
