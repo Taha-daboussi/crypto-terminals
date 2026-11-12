@@ -13,7 +13,7 @@ import About from "./pages/About";
 function App() {
   return (
     <div className="container">
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
